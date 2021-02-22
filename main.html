@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>웹 페이지의 구성 요소</title>
+<style>
+	body { background-color : linen; color : green;
+				margin-left : 40px; margin-right : 40px;}
+	h3 { text-align : center; color : darkred;}
+	hr { height : 5px; border : solid grey;
+				background-color : grey }
+	span { color: blue; font-size: 20px; }
+</style>
+<script>
+	function show() { // <img>에 이미지 달기
+		document.getElementById("fig").src = "image.jpg"
+	}
+	function hide() { // <img>에 이미지 제거
+		document.getElementById("fig").src= "";
+	}
+</script>
+</head>
+<body>
+<h3 onmouseover="show()" onmouseout="hide()">우리 강아지</h3>
+<hr>
+<div><img id="fig" src=""></div>
+안녕하세요.<span>스터지 중입니다.</span>.
+HTML공부합니다. "<span>웹을 만들어보아요</span>".
+</body>
+</html>
